@@ -27,10 +27,10 @@ private int visina = 0;
 		if (sirina < 135 && sirina > 355)
 			throw new RuntimeException("Sirina van opsega");
 		this.sirina = sirina;
-		}
+	}
 	public int getVisina() {
 		return visina;
-		}
+	}
 	public void setVisina(int visina) {
 		if (visina < 25 || visina > 95)
 			throw new RuntimeException("Visina van opsega");
