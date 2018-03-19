@@ -112,21 +112,21 @@ public class AutoGumaTest {
 	
 	@Test
 	public void testToString() {
-		a.setMarkaModel("opel astra");
+		a.setMarkaModel("Michelin");
 		a.setPrecnik(15);
 		a.setSirina(150);
 		a.setVisina(80);
 		
-		assertEquals("AutoGuma [markaModel=opel astra, precnik=15, sirina=150, visina=80]", a.toString());
+		assertEquals("AutoGuma [markaModel=Michelin, precnik=15, sirina=150, visina=80]", a.toString());
 	}
 	@Test
 	public void testEqualsFalse() {
-		a.setMarkaModel("opel astra");
+		a.setMarkaModel("Michelin");
 		a.setPrecnik(15);
 		a.setSirina(150);
 		a.setVisina(80);
 		AutoGuma a2=new AutoGuma();
-		a2.setMarkaModel("bmw 321");
+		a2.setMarkaModel("Pirelli");
 		a2.setPrecnik(15);
 		a2.setSirina(150);
 		a2.setVisina(80);
@@ -135,12 +135,12 @@ public class AutoGumaTest {
 	}
 	@Test
 	public void testEqualsTrue() {
-		a.setMarkaModel("bmw x2");
+		a.setMarkaModel("Pirelli");
 		a.setPrecnik(15);
 		a.setSirina(150);
 		a.setVisina(80);
 		AutoGuma a2=new AutoGuma();
-		a2.setMarkaModel("bmw x2");
+		a2.setMarkaModel("Pirelli");
 		a2.setPrecnik(15);
 		a2.setSirina(150);
 		a2.setVisina(80);
