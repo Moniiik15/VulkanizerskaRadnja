@@ -121,12 +121,20 @@ private int visina = 0;
 			throw new RuntimeException("Visina van opsega");
 		this.visina = visina;
 	}
+	/**vraca string koji sadrzi za svaku AutoGumu njenu marku i model, precnik, sirinu i visinu.
+	 * @return podaci o AutoGumi kao String
+	 */
 	@Override
 	public String toString() {
 		return "AutoGuma [markaModel=" + markaModel + ", precnik=" + precnik +
 		", sirina=" + sirina + ", visina=" + visina + "]";
 		
 	}
+	/**
+	 * Poredjenje dve AutoGume po atributima markaModel,precnik, sirina i visina.
+	 * @param instanca klase Objekat odnosno klase AutoGuma
+	 * @return ako dve AutoGume imaju iste atribute, metoda vraca true, u suprotnom false
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
